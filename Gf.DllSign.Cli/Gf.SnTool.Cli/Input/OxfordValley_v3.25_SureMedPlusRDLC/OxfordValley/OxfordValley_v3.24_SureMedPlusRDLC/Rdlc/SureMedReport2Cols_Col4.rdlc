@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="BCOReportFrameworkModuleModels">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>e17eac81-cdab-4f1d-a211-8af47d35e921</rd:DataSourceID>
+    </DataSource>
+    <DataSource Name="BCOReportFrameworkModuleModels1">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>fd9a7848-f47a-4874-853c-a7df565038ef</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="CupsInfoDataSet">
+      <Query>
+        <DataSourceName>BCOReportFrameworkModuleModels</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="col">
+          <DataField>col</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="cupNumber">
+          <DataField>cupNumber</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DayName">
+          <DataField>DayName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FirstCup">
+          <DataField>FirstCup</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="IntakeDateTimeStr">
+          <DataField>IntakeDateTimeStr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IntakeIcon">
+          <DataField>IntakeIcon</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="IntakeTimeColor">
+          <DataField>IntakeTimeColor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IsMultiPatient">
+          <DataField>IsMultiPatient</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="PatientName">
+          <DataField>PatientName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PrintTime">
+          <DataField>PrintTime</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="row">
+          <DataField>row</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TimeSlotColor">
+          <DataField>TimeSlotColor</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>PmCardRDLC.Models</rd:DataSetName>
+        <rd:TableName>SureMedRdlcReportOutsideCupInfo</rd:TableName>
+        <rd:ObjectDataSourceType>PmCardRDLC.Models.SureMedRdlcReportOutsideCupInfo, PmCardRDLC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix5">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.00787in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>3.334cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="RecMain">
+                          <ReportItems>
+                            <Rectangle Name="Rectangle1">
+                              <ReportItems>
+                                <Textbox Name="StartHere">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value rd:LocID="StartHereTitle" EvaluationMode="Constant" />
+                                          <Style>
+                                            <FontFamily>Calibri</FontFamily>
+                                            <FontWeight>Bold</FontWeight>
+                                            <Color>White</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>0.84007in</Top>
+                                  <Left>0.11583in</Left>
+                                  <Height>0.15833in</Height>
+                                  <Width>1.14825in</Width>
+                                  <Visibility>
+                                    <Hidden>=NOT(Fields!FirstCup.Value = True)</Hidden>
+                                  </Visibility>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BackgroundColor>LimeGreen</BackgroundColor>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <LinkToChild>SubReport1</LinkToChild>
+                              <Top>0.70221cm</Top>
+                              <Left>0.28417in</Left>
+                              <Height>2.56471cm</Height>
+                              <Width>1.42848in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                            <Subreport Name="Subreport1">
+                              <ReportName>drugDetail</ReportName>
+                              <Parameters>
+                                <Parameter Name="cupNumber">
+                                  <Value>=Fields!cupNumber.Value</Value>
+                                </Parameter>
+                              </Parameters>
+                              <Top>0.27646in</Top>
+                              <Left>0.28417in</Left>
+                              <Height>0.82254in</Height>
+                              <Width>1.42848in</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Subreport>
+                            <Textbox Name="NameDay">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=First(Fields!DayName.Value)</Value>
+                                      <Style>
+                                        <FontFamily>Calibri</FontFamily>
+                                        <FontSize>6pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <Top>0.16352in</Top>
+                              <Left>1.90042in</Left>
+                              <Height>0.97848in</Height>
+                              <Width>0.24528cm</Width>
+                              <ZIndex>2</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                            <Rectangle Name="Rectangle4">
+                              <ReportItems>
+                                <Textbox Name="IntakeDateTimeStr">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!IntakeDateTimeStr.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Calibri</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                            <Color>=Code.ContrastColor(Fields!TimeSlotColor.Value)</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>IntakeDateTimeStr</rd:DefaultName>
+                                  <Left>0.16in</Left>
+                                  <Height>0.52741cm</Height>
+                                  <Width>1.64958in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <PaddingTop>2pt</PaddingTop>
+                                    <PaddingBottom>2pt</PaddingBottom>
+                                    <WritingMode>Horizontal</WritingMode>
+                                  </Style>
+                                </Textbox>
+                                <Image Name="Icon">
+                                  <Source>Database</Source>
+                                  <Value>=Fields!IntakeIcon.Value</Value>
+                                  <MIMEType>image/jpeg</MIMEType>
+                                  <Sizing>FitProportional</Sizing>
+                                  <Top>0.02382in</Top>
+                                  <Height>0.16in</Height>
+                                  <Width>0.16in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                  </Style>
+                                </Image>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Top>0.0475in</Top>
+                              <Left>0cm</Left>
+                              <Height>0.52741cm</Height>
+                              <Width>1.80958in</Width>
+                              <ZIndex>3</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <BackgroundColor>=iif(Fields!TimeSlotColor.Value="" And Fields!PatientName.Value&lt;&gt;"", "Yellow",Fields!TimeSlotColor.Value)</BackgroundColor>
+                              </Style>
+                            </Rectangle>
+                            <Textbox Name="PatientName">
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!PatientName.Value</Value>
+                                      <Style>
+                                        <FontFamily>Calibri</FontFamily>
+                                        <FontSize>6pt</FontSize>
+                                        <FontWeight>Bold</FontWeight>
+                                        <Color>=IIF(Fields!IsMultiPatient.Value = True, "Red" ,"Black")</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>PatientName</rd:DefaultName>
+                              <Top>0.27646in</Top>
+                              <Height>1.00604in</Height>
+                              <Width>0.1725in</Width>
+                              <ZIndex>4</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                                <WritingMode>Vertical</WritingMode>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                        <rd:Selected>true</rd:Selected>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="col1">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!col.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!col.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember />
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>CupsInfoDataSet</DataSetName>
+            <Height>3.334cm</Height>
+            <Width>2.00787in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>3.334cm</Height>
+        <Style />
+      </Body>
+      <Width>2.00787in</Width>
+      <Page>
+        <PageHeight>23.24cm</PageHeight>
+        <PageWidth>2.00787in</PageWidth>
+        <InteractiveHeight>23.24cm</InteractiveHeight>
+        <InteractiveWidth>2.00787in</InteractiveWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function ContrastColor(ByVal bg As String) As String
+        Dim color As System.Drawing.Color = System.Drawing.ColorTranslator.FromHtml(bg)
+        'var color = System.Drawing.Color.FromName(bg);
+        Dim nThreshold As Integer = 125
+        Dim bgDelta As Integer = CType(((color.R * 0.299)  _
+                    + ((color.G * 0.587)  _
+                    + (color.B * 0.114))),Integer)
+        If (bgDelta &gt; nThreshold) Then
+            Return "Black"
+        Else
+            Return "White"
+        End If
+        
+    End Function</Code>
+  <Language>en-US</Language>
+  <CodeModules>
+    <CodeModule>System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</CodeModule>
+  </CodeModules>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>54726d25-68fe-4fab-822a-b6f0173cf039</rd:ReportID>
+</Report>

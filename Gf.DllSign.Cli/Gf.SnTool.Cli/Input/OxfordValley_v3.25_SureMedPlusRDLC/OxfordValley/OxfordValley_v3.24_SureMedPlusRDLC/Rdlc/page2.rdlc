@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="SureMedPlusRdlcModels">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>0ecfef1f-faa2-4c59-a36c-62bf1d0932e2</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="PillInfoPage2DataSet">
+      <Query>
+        <DataSourceName>SureMedPlusRdlcModels</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="BrandName">
+          <DataField>BrandName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Col1Name">
+          <DataField>Col1Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Col2Name">
+          <DataField>Col2Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Col3Name">
+          <DataField>Col3Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Col4Name">
+          <DataField>Col4Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CommercialDrugName">
+          <DataField>CommercialDrugName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Color">
+          <DataField>Color</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Shape">
+          <DataField>Shape</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Imprint">
+          <DataField>Imprint</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DinNumber">
+          <DataField>DinNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DoseName">
+          <DataField>DoseName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DrName">
+          <DataField>DrName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DrugName">
+          <DataField>DrugName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ExpiredDateStr">
+          <DataField>ExpiredDateStr</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ImgModel1">
+          <DataField>ImgModel1</DataField>
+          <rd:TypeName>System.Drawing.Image</rd:TypeName>
+        </Field>
+        <Field Name="ImgModel2">
+          <DataField>ImgModel2</DataField>
+          <rd:TypeName>System.Drawing.Image</rd:TypeName>
+        </Field>
+        <Field Name="ImgModel3">
+          <DataField>ImgModel3</DataField>
+          <rd:TypeName>System.Drawing.Image</rd:TypeName>
+        </Field>
+        <Field Name="ImgModel4">
+          <DataField>ImgModel4</DataField>
+          <rd:TypeName>System.Drawing.Image</rd:TypeName>
+        </Field>
+        <Field Name="Instructions">
+          <DataField>Instructions</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LotNumber">
+          <DataField>LotNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Manufacturer">
+          <DataField>Manufacturer</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Model1">
+          <DataField>Model1</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="Model2">
+          <DataField>Model2</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="NationalDrugCode">
+          <DataField>NationalDrugCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Notes">
+          <DataField>Notes</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NumEve">
+          <DataField>NumEve</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NumMorn">
+          <DataField>NumMorn</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NumNight">
+          <DataField>NumNight</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="NumNoon">
+          <DataField>NumNoon</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="RxNumber">
+          <DataField>RxNumber</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Strength">
+          <DataField>Strength</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>SureMedPlusRdlc.Models</rd:DataSetName>
+        <rd:TableName>SureMedRdlcReportInsideInfo</rd:TableName>
+        <rd:ObjectDataSourceType>SureMedPlusRdlc.Models.SureMedRdlcReportInsideInfo, SureMedPlusRdlc_9b3cf024-a60b-4149-8f96-64793c768a77, Version=1.2.173.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix1">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>7.33819in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.60342in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="Rectangle2">
+                          <ReportItems>
+                            <Rectangle Name="Rectangle3">
+                              <ReportItems>
+                                <Image Name="Image2">
+                                  <Source>Database</Source>
+                                  <Value>=Fields!Model2.Value</Value>
+                                  <MIMEType>image/jpeg</MIMEType>
+                                  <Sizing>FitProportional</Sizing>
+                                  <Top>0.3447in</Top>
+                                  <Left>2.91334in</Left>
+                                  <Height>0.24861in</Height>
+                                  <Width>0.27708in</Width>
+                                  <Style>
+                                    <Border>
+                                      <Color>Aqua</Color>
+                                      <Style>None</Style>
+                                      <Width>0.5pt</Width>
+                                    </Border>
+                                  </Style>
+                                </Image>
+                                <Textbox Name="Textbox25">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!Color.Value) &amp; " / " &amp; First(Fields!Shape.Value) &amp; " / " &amp; First(Fields!Imprint.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Arial Narrow</FontFamily>
+                                            <FontSize>5.9pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox7</rd:DefaultName>
+                                  <Top>0.48425in</Top>
+                                  <Left>3.20848in</Left>
+                                  <Height>0.11323in</Height>
+                                  <Width>2.04306in</Width>
+                                  <ZIndex>1</ZIndex>
+                                  <Style>
+                                    <Border />
+                                    <VerticalAlign>Bottom</VerticalAlign>
+                                  </Style>
+                                </Textbox>
+                                <Image Name="Image1">
+                                  <Source>Database</Source>
+                                  <Value>=Fields!Model1.Value</Value>
+                                  <MIMEType>image/jpeg</MIMEType>
+                                  <Sizing>FitProportional</Sizing>
+                                  <Top>0.1195in</Top>
+                                  <Left>2.91334in</Left>
+                                  <Height>0.24861in</Height>
+                                  <Width>0.27708in</Width>
+                                  <ZIndex>2</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Color>Aqua</Color>
+                                      <Style>None</Style>
+                                      <Width>0.5pt</Width>
+                                    </Border>
+                                  </Style>
+                                </Image>
+                                <Textbox Name="Textbox26">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!BrandName.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Arial Narrow</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox7</rd:DefaultName>
+                                  <Top>0.44092in</Top>
+                                  <Left>0.08347in</Left>
+                                  <Height>0.1625in</Height>
+                                  <Width>2.7743in</Width>
+                                  <ZIndex>3</ZIndex>
+                                  <Style>
+                                    <Border />
+                                    <BottomBorder>
+                                      <Style>None</Style>
+                                    </BottomBorder>
+                                    <LeftBorder>
+                                      <Color>Silver</Color>
+                                      <Style>Solid</Style>
+                                    </LeftBorder>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                    <PaddingLeft>1pt</PaddingLeft>
+                                    <PaddingTop>1.5pt</PaddingTop>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox24">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!Manufacturer.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Arial Narrow</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox7</rd:DefaultName>
+                                  <Top>0.31057in</Top>
+                                  <Left>0.08348in</Left>
+                                  <Height>0.1625in</Height>
+                                  <Width>2.7743in</Width>
+                                  <ZIndex>4</ZIndex>
+                                  <Style>
+                                    <Border />
+                                    <BottomBorder>
+                                      <Color>Silver</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <LeftBorder>
+                                      <Color>Silver</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </LeftBorder>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingLeft>1pt</PaddingLeft>
+                                    <PaddingTop>1.5pt</PaddingTop>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox23">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!DrName.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Arial Narrow</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox7</rd:DefaultName>
+                                  <Top>0.1945in</Top>
+                                  <Left>0.08348in</Left>
+                                  <Height>0.15in</Height>
+                                  <Width>2.7743in</Width>
+                                  <ZIndex>5</ZIndex>
+                                  <Style>
+                                    <Border />
+                                    <BottomBorder>
+                                      <Color>Silver</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <LeftBorder>
+                                      <Color>Silver</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </LeftBorder>
+                                    <VerticalAlign>Bottom</VerticalAlign>
+                                    <PaddingLeft>1pt</PaddingLeft>
+                                    <PaddingTop>1.5pt</PaddingTop>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NumMorn2">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value rd:LocID="nightSub">=First(Fields!Col4Name.Value)</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NumMorn</rd:DefaultName>
+                                  <Top>0.00521in</Top>
+                                  <Left>5.41805in</Left>
+                                  <Height>0.13532in</Height>
+                                  <Width>1.2cm</Width>
+                                  <ZIndex>6</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Style>None</Style>
+                                    </BottomBorder>
+                                    <BackgroundColor>PeachPuff</BackgroundColor>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NumMorn3">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value rd:LocID="nightSub">=First(Fields!Col3Name.Value)</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NumMorn</rd:DefaultName>
+                                  <Top>0.00521in</Top>
+                                  <Left>5.89049in</Left>
+                                  <Height>0.13532in</Height>
+                                  <Width>1.2cm</Width>
+                                  <ZIndex>7</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Style>None</Style>
+                                    </BottomBorder>
+                                    <BackgroundColor>PeachPuff</BackgroundColor>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NumMorn4">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value rd:LocID="nightSub">=First(Fields!Col2Name.Value)</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NumMorn</rd:DefaultName>
+                                  <Top>0.00521in</Top>
+                                  <Left>6.36293in</Left>
+                                  <Height>0.13532in</Height>
+                                  <Width>1.2cm</Width>
+                                  <ZIndex>8</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Style>None</Style>
+                                    </BottomBorder>
+                                    <BackgroundColor>PeachPuff</BackgroundColor>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NumMorn5">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value rd:LocID="nightSub">=First(Fields!Col1Name.Value)</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NumMorn</rd:DefaultName>
+                                  <Top>0.00521in</Top>
+                                  <Left>6.83538in</Left>
+                                  <Height>0.13532in</Height>
+                                  <Width>1.2cm</Width>
+                                  <ZIndex>9</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Style>None</Style>
+                                    </BottomBorder>
+                                    <BackgroundColor>PeachPuff</BackgroundColor>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="txtDrugName">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=UCase(First(Fields!DrugName.Value))</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>0.00521in</Top>
+                                  <Left>0.08348in</Left>
+                                  <Height>0.12143in</Height>
+                                  <Width>7.04673cm</Width>
+                                  <ZIndex>10</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <LeftBorder>
+                                      <Color>Silver</Color>
+                                      <Style>Solid</Style>
+                                    </LeftBorder>
+                                    <BackgroundColor>PeachPuff</BackgroundColor>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox4">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Format(CDec(Fields!NumNoon.Value),"#.####")</Value>
+                                          <Style>
+                                            <FontSize>20pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                            <Color>Blue</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox2</rd:DefaultName>
+                                  <Top>0.14053in</Top>
+                                  <Left>6.36293in</Left>
+                                  <Height>0.45695in</Height>
+                                  <Width>1.2cm</Width>
+                                  <ZIndex>11</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox5">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Format(CDec(Fields!NumMorn.Value),"#.####")</Value>
+                                          <Style>
+                                            <FontSize>20pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                            <Color>Blue</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox2</rd:DefaultName>
+                                  <Top>0.14053in</Top>
+                                  <Left>6.83398in</Left>
+                                  <Height>0.45695in</Height>
+                                  <Width>1.2cm</Width>
+                                  <ZIndex>12</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox3">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Format(CDec(Fields!NumEve.Value),"#.####")</Value>
+                                          <Style>
+                                            <FontSize>20pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                            <Color>Blue</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox2</rd:DefaultName>
+                                  <Top>0.14053in</Top>
+                                  <Left>5.89049in</Left>
+                                  <Height>0.45695in</Height>
+                                  <Width>1.2cm</Width>
+                                  <ZIndex>13</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="NumMorn">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=Format(CDec(Fields!NumNight.Value),"#.####")</Value>
+                                          <Style>
+                                            <FontSize>20pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                            <Color>Blue</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>NumMorn</rd:DefaultName>
+                                  <Top>0.14053in</Top>
+                                  <Left>5.41805in</Left>
+                                  <Height>0.45695in</Height>
+                                  <Width>1.2cm</Width>
+                                  <ZIndex>14</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>Solid</Style>
+                                    </Border>
+                                    <VerticalAlign>Middle</VerticalAlign>
+                                    <PaddingRight>2pt</PaddingRight>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox21">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!Instructions.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Arial Narrow</FontFamily>
+                                            <FontSize>7pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox7</rd:DefaultName>
+                                  <Top>0.11221in</Top>
+                                  <Left>3.20848in</Left>
+                                  <Height>0.23021in</Height>
+                                  <Width>2.04306in</Width>
+                                  <ZIndex>15</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BottomBorder>
+                                      <Color>Silver</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </BottomBorder>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox22">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!RxNumber.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Arial Narrow</FontFamily>
+                                            <FontSize>8pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox7</rd:DefaultName>
+                                  <Top>0.08914in</Top>
+                                  <Left>0.08347in</Left>
+                                  <Height>0.15in</Height>
+                                  <Width>2.7743in</Width>
+                                  <ZIndex>16</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <TopBorder>
+                                      <Style>None</Style>
+                                    </TopBorder>
+                                    <BottomBorder>
+                                      <Color>Silver</Color>
+                                      <Style>Solid</Style>
+                                      <Width>0.5pt</Width>
+                                    </BottomBorder>
+                                    <LeftBorder>
+                                      <Color>Silver</Color>
+                                      <Style>Solid</Style>
+                                      <Width>1pt</Width>
+                                    </LeftBorder>
+                                    <RightBorder>
+                                      <Style>None</Style>
+                                    </RightBorder>
+                                    <VerticalAlign>Bottom</VerticalAlign>
+                                    <PaddingLeft>1pt</PaddingLeft>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="txtNdc">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!NationalDrugCode.Value)</Value>
+                                          <Style>
+                                            <FontSize>9pt</FontSize>
+                                            <FontWeight>Bold</FontWeight>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style>
+                                        <TextAlign>Center</TextAlign>
+                                      </Style>
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <Top>0.00521in</Top>
+                                  <Left>2.91333in</Left>
+                                  <Height>0.12143in</Height>
+                                  <Width>2.33821in</Width>
+                                  <ZIndex>17</ZIndex>
+                                  <Style>
+                                    <Border>
+                                      <Style>None</Style>
+                                    </Border>
+                                    <BackgroundColor>PeachPuff</BackgroundColor>
+                                    <VerticalAlign>Top</VerticalAlign>
+                                  </Style>
+                                </Textbox>
+                                <Textbox Name="Textbox27">
+                                  <KeepTogether>true</KeepTogether>
+                                  <Paragraphs>
+                                    <Paragraph>
+                                      <TextRuns>
+                                        <TextRun>
+                                          <Value>=First(Fields!Notes.Value)</Value>
+                                          <Style>
+                                            <FontFamily>Arial Narrow</FontFamily>
+                                            <FontSize>5.5pt</FontSize>
+                                            <FontWeight>Normal</FontWeight>
+                                            <Color>Red</Color>
+                                          </Style>
+                                        </TextRun>
+                                      </TextRuns>
+                                      <Style />
+                                    </Paragraph>
+                                  </Paragraphs>
+                                  <rd:DefaultName>Textbox7</rd:DefaultName>
+                                  <Top>0.3445in</Top>
+                                  <Left>3.20848in</Left>
+                                  <Height>0.17232in</Height>
+                                  <Width>2.04306in</Width>
+                                  <ZIndex>18</ZIndex>
+                                  <Style>
+                                    <Border />
+                                    <VerticalAlign>Top</VerticalAlign>
+                                  </Style>
+                                </Textbox>
+                              </ReportItems>
+                              <KeepTogether>true</KeepTogether>
+                              <Left>0.0026in</Left>
+                              <Height>0.60342in</Height>
+                              <Width>7.33559in</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Rectangle>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!NationalDrugCode.Value</GroupExpression>
+                    </GroupExpressions>
+                  </Group>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>PillInfoPage2DataSet</DataSetName>
+            <Height>0.60342in</Height>
+            <Width>7.33819in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>0.60342in</Height>
+        <Style />
+      </Body>
+      <Width>7.33819in</Width>
+      <Page>
+        <PageHeight>9.5in</PageHeight>
+        <PageWidth>7.4in</PageWidth>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>6ed222d3-cdff-4e1d-a2a0-221f040826c1</rd:ReportID>
+</Report>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<phrases>
+  <phrase id="BedWithColonTitle">Lit:</phrase>
+  <phrase id="RoomWithColonTitle">Chambre:</phrase>
+  <phrase id="ErrorDataTitle">Erreur de donnée</phrase>
+  <phrase id="StartDateWithColonTitle">Débute le:</phrase>
+  <phrase id="PatientIdWithColonTitle">ID Patient:</phrase>
+  <phrase id="StartHereTitle">DÉBUT</phrase>
+  <phrase id="PackagedWithColonTitle">Préparé:</phrase>
+  <phrase id="PackedByWithColonTitle">Préparé par:</phrase>
+  <phrase id="PhoneWithColonTitle">Tel.:</phrase>
+  <phrase id="RxWithColonTitle">No d'ordonnance</phrase>
+  <phrase id="CheckByWithColonTitle">Vérifié par:</phrase>
+  <phrase id="DatePackedWithColonTitle">Date préparée:</phrase>
+  <phrase id="ExpireDateWithColonTitle">DATE DE PÉREMPTION:</phrase>
+  <phrase id="Dea#WithColonTitle">N/A</phrase>
+  <phrase id="DescWithColonTitle">Desc:</phrase>
+  <phrase id="DinWithColonTitle">DIN:</phrase>
+  <phrase id="DirectionsWithColonTitle">Instructions:</phrase>
+  <phrase id="DOBTitle">DDN:</phrase>
+  <phrase id="DoseTitle">Dose</phrase>
+  <phrase id="DrNameWithColonTitle">Méd :</phrase>
+  <phrase id="PackTitle">Emballer</phrase>
+  <phrase id="OfTitle">de</phrase>
+  <phrase id="NDCPrefix">Numéro NDC</phrase>
+  <phrase id="CardTitle">Carte</phrase>
+  <phrase id="LotWithColonTitle">Lot:</phrase>
+  <phrase id="MgfWithColonTitle">Mfg:</phrase>
+  <phrase id="BrandWithColonTitle">Marque :</phrase>
+  <phrase id="Warning">Keep out of reach of children. Not child safe packaging. Refer to medical records of complete instructions.
+  Caution: State or federal law prohibits the transfer of these drugs  to  any person other than the patient for whom they where prescribed.
+  </phrase>
+  <phrase id="TotalTitle">Total</phrase>
+  <phrase id="mornSub">Matin</phrase>
+  <phrase id="noonSub">Midi</phrase>
+  <phrase id="eveSub">Soirée</phrase>
+  <phrase id="nightSub">Nuit</phrase>
+</phrases>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<phrases>
+  <phrase id="BedWithColonTitle">Bed:</phrase>
+  <phrase id="RoomWithColonTitle">Room:</phrase>
+  <phrase id="ErrorDataTitle">Error Data</phrase>
+  <phrase id="StartDateWithColonTitle">Start Date:</phrase>
+  <phrase id="PatientIdWithColonTitle">Patient ID:</phrase>
+  <phrase id="StartHereTitle">START HERE</phrase>
+  <phrase id="PackagedWithColonTitle">Packaged:</phrase>
+  <phrase id="PackedByWithColonTitle">Packed by:</phrase>
+  <phrase id="PhoneWithColonTitle">Phone:</phrase>
+  <phrase id="RxWithColonTitle">RX#</phrase>
+  <phrase id="CheckByWithColonTitle">Checked by:</phrase>
+  <phrase id="DatePackedWithColonTitle">DATE PACKED:</phrase>
+  <phrase id="ExpireDateWithColonTitle">EXPIRE DATE:</phrase>
+  <phrase id="Dea#WithColonTitle">DEA#:</phrase>
+  <phrase id="DescWithColonTitle">Desc:</phrase>
+  <phrase id="DinWithColonTitle">DIN:</phrase>
+  <phrase id="DirectionsWithColonTitle">Instructions:</phrase>
+  <phrase id="DOBTitle">DOB:</phrase>
+  <phrase id="DoseTitle">Dose</phrase>
+  <phrase id="DrNameWithColonTitle">Dr:</phrase>
+  <phrase id="PackTitle">PACK</phrase>
+  <phrase id="OfTitle">of</phrase>
+  <phrase id="NDCPrefix">NDC #</phrase>
+  <phrase id="CardTitle">Card</phrase>
+  <phrase id="LotWithColonTitle">Lot:</phrase>
+  <phrase id="MgfWithColonTitle">Mfg:</phrase>
+  <phrase id="BrandWithColonTitle">Brand:</phrase>
+  <phrase id="Warning">Keep out of reach of children. Not child safe packaging. Refer to medical records of complete instructions.</phrase>
+  <phrase id="Caution">Caution: State or federal law prohibits the transfer of these drugs  to  any person other than the patient for whom they where prescribed.</phrase>
+  <phrase id="TotalTitle">Total</phrase>
+  <phrase id="mornSub">Morn</phrase>
+  <phrase id="noonSub">Noon</phrase>
+  <phrase id="eveSub">Eve</phrase>
+  <phrase id="nightSub">Night</phrase>
+</phrases>

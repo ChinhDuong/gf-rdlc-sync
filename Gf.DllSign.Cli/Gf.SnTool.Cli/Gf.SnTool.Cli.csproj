@@ -1,0 +1,65 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Input\**" />
+    <Compile Remove="logs\**" />
+    <Compile Remove="Output\**" />
+    <Compile Remove="Tmp\**" />
+    <EmbeddedResource Remove="Input\**" />
+    <EmbeddedResource Remove="logs\**" />
+    <EmbeddedResource Remove="Output\**" />
+    <EmbeddedResource Remove="Tmp\**" />
+    <None Remove="Input\**" />
+    <None Remove="logs\**" />
+    <None Remove="Output\**" />
+    <None Remove="Tmp\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Mercury_v2_SureMedPlusRdlc" />
+    <None Remove="Mercury_v2_SureMedPlusRdlc.signed" />
+    <None Remove="myrun.bat" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
+    <PackageReference Include="Serilog" Version="2.6.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.0.0" />
+    <PackageReference Include="System.IO.Compression.ZipFile" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="dlls\BCO.DataReportModule.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      
+    </None>
+    <None Update="dlls\BCO.Infrastructure.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="dlls\CommonLib.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="dlls\GenCode128.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="dlls\NuGet.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="dlls\PublicPrivateKeyFile.snk">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

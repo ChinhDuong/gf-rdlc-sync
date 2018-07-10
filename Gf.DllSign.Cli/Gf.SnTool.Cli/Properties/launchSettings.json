@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Gf.SnTool.Cli": {
+      "commandName": "Project",
+      "commandLineArgs": "-f Input\\Get_Exception.zip -o \"D:\\temp\\rdlc.signed\" -v 1.1.100.0"
+    }
+  }
+}
